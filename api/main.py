@@ -15,8 +15,8 @@ import tensorflow as tf
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="F:\\New folder\\frontend\\static"), name="static")
-templates = Jinja2Templates(directory="F:\\New folder\\frontend\\templates")
+app.mount("/static", StaticFiles(directory="../frontend/static"), name="static")
+templates = Jinja2Templates(directory="../frontend/templates")
 
 # Potato Crop Disease Classification model
 PCDC_MODEL = tf.keras.models.load_model("../models/pcdc/PCDC_1")
