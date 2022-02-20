@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+<main>
+    <section class="p-5">
+        <div class="text-center">
+            <h2 class="text-success fw-bold">Pepper Bell Crop Disease Classification</h2>
+            <h4>Check if your Pepper Bell crops has any symptoms of <span class="fw-bold text-danger">Bacterial Spot</span> and prevent your loss</h4>
+            <div class="container">
+                <form action="/pepper_bell/predict_pbcdc" method="post" enctype="multipart/form-data" class="mt-5">
+                    <div class="px-5 mx-5">
+                        <label for="formFileLg" class="form-label fw-bold">Upload an image of your Pepper Bell plant
+                            leave</label>
+                        <input id="potato_leave_image" class="form-control form-control-lg" name="file" type="file" accept="image/*">
+                    </div>
+                    <div class="text-center">
+                        <button id="potato_leave_image_submit" class="btn btn-lg btn-outline-success mt-2 fw-bold" type="submit" disabled="false">Analyze</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% if status %}
+        <div class="container mt-5 text-center result-area">
+            {% if status == 'Healthy' %}
+            <h2><span class="text-dark fw-bold">CONDITION :</span>&nbsp;&nbsp;<span class="text-success fw-bold">{{status}}</span></h2>
+            {% else %}
+            <h2><span class="text-dark fw-bold">CONDITION :</span>&nbsp;&nbsp;<span class="text-danger fw-bold">{{status}}</span></h2>
+            {%endif%}
+            <h5><span class="text-dark fw-bold">CONFIDENCE :</span>&nbsp;&nbsp;<span class="fw-bold">{{confidence}}</span></h5>
+        </div>
+        {% endif %}
+        <div class="container mt-5">
+            <h4 class="text-center">Frequently Asked Question</h4>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What is bacterial spot?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><span class="fw-bold">Bacterial leaf spot</span>, caused by Xanthomonas campestris pv. vesicatoria, is the most common and destructive disease for peppers. <br><a href="https://extension.wvu.edu/lawn-gardening-pests/plant-disease/fruit-vegetable-diseases/bacterial-leaf-spot-of-pepper">read more --></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How to treat bacterial leaf spot on peppers?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><span class="fw-bold">Seed treatment</span> with hot water, soaking seeds for 30 minutes in water pre-heated to 125 F/51 C, is effective in reducing bacterial populations on the surface and inside the seeds. However, seed germination may be affected by heat treatment if not done accurately, while the risk is relatively low with bleach treatment. <br><a href="https://extension.wvu.edu/lawn-gardening-pests/plant-disease/fruit-vegetable-diseases/bacterial-leaf-spot-of-pepper#:~:text=Seed%20treatment%20with%20hot%20water,relatively%20low%20with%20bleach%20treatment.">know more --></a></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+</main>
+{% endblock main_content %}
+
+{% block bottom_nav %}
+<div class="my-2">
+    <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="/" style="text-decoration:none;">Home</a></li>
+            <li class="breadcrumb-item"><a href="/potato" style="text-decoration:none;">Potato</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pepper</li>
+        </ol>
+    </nav>
+</div>
+{% endblock bottom_nav %}

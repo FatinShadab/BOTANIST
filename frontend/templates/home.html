@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+<main>
+  <section class="p-5">
+    <div class="container">
+      <h2 class="text-success fw-bold text-center">BOTANIST</h2>
+      <h4 class="text-center">Save your crops by detecting the disease correctly by <span
+          class="strong text-success">BOTANIST</span></h4>
+      <h4 class="text-center">We use deep-learning and computer vison tecnology to provide you the best solutions</h4>
+      <div class='d-flex align-items-center justify-content-around pt-3'>
+        <div class="row gap-5 px-5">
+          <div class="col-lg-4">
+            <a type="button" href="/potato" class="btn btn-lg btn-outline-success fw-bold shadow">POTATO</a>
+          </div>
+          <div class="col-lg-4">
+            <a type="button" href="/pepper_bell" class="btn btn-lg btn-outline-success fw-bold shadow">PEPPER</a>
+          </div>
+        </div>
+        <img class="img-fluid w-25 d-sm-block placeholder-glow"
+          src="{{ url_for('static', path='/images/vecteezy_botanist-examining-plant-sample-concept_.jpg') }}"
+          alt="This is a img" style="width:auto;" />
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+{% endblock main_content %}
+
+{% block bottom_nav %}
+<div class="my-2">
+  <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+      <li class="breadcrumb-item"><a href="./potato" style="text-decoration:none;">Potato</a></li>
+      <li class="breadcrumb-item"><a href="./pepper_bell" style="text-decoration:none;">Pepper</a></li>
+    </ol>
+  </nav>
+</div>
+{% endblock bottom_nav %}
