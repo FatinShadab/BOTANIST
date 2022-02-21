@@ -4,7 +4,7 @@
  ## Table of Contents
 * [Technologies](#technologies-used)
 * [Pictures](#pictures)
-* [Download & Install](#download_&_install)
+* [Download & Install](#download--install)
 * [License](#license)
 
 ## Technologies Used
