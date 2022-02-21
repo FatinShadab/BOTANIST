@@ -5,7 +5,6 @@
 * [Technologies](#technologies-used)
 * [Pictures](#pictures)
 * [Download & Install](#download_&_install)
-* [Video](#video)
 * [License](#license)
 
 ## Technologies Used
