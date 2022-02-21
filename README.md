@@ -1,5 +1,12 @@
 # BOTANIST
  BOTANIST is a end to end ml-web project of detecting potato and pepper-bell diseasese
+ 
+ ## Table of Contents
+* [Technologies](#technologies-used)
+* [Pictures](#pictures)
+* [Download & Install](#download_&_install)
+* [Video](#video)
+* [License](#license)
 
 ## Technologies Used
 <ul>
@@ -33,3 +40,7 @@ pip install -r req.text
 python main.py
 ```
 -  Go to [localhost](http://localhost:8080/)
+
+
+## License
+ This project is open source and available under the [MIT License](https://github.com/FatinShadab/BOTANIST/blob/main/LICENSE).
