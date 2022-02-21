@@ -8,5 +8,5 @@
  <li>jinja2</li>
  <li>Tensorflow</li>
  <li>Bootstrap</li>
- <li>Google Colab [etc](https://github.com/FatinShadab/BOTANIST/blob/main/req.text)</li>
+ <li>Google Colab <a href="https://github.com/FatinShadab/BOTANIST/blob/main/req.text">etc</a></li>
 </ul>
