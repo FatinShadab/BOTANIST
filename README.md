@@ -12,4 +12,9 @@
 </ul>
 
 ## Pictures
+#### Home page
 ![Screenshot](/ss/home_ss.png)
+#### Upload page
+![Screenshot](/ss/upload_ss.png)
+#### Result's page
+![Screenshot](/ss/results_ss.png)
