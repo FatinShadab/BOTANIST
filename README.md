@@ -18,3 +18,12 @@
 ![Screenshot](/ss/upload_ss.png)
 #### Result's page
 ![Screenshot](/ss/results_ss.png)
+
+## Download & Install
+- Download / clone the repo from github
+- Install dependencies
+```
+pip install -r req.text
+```
+-  Run the main.py in api folder
+-  Go to [localhost](http://localhost:8080/)
