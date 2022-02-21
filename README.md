@@ -1,5 +1,5 @@
 # BOTANIST
- BOTANIST is a end to end ml project of detecting potato and pepper-bell diseasese
+ BOTANIST is a end to end ml-web project of detecting potato and pepper-bell diseasese
 
 ## Technologies Used
 <ul>
@@ -10,3 +10,6 @@
  <li>Bootstrap</li>
  <li>Google Colab <a href="https://github.com/FatinShadab/BOTANIST/blob/main/req.text">etc</a></li>
 </ul>
+
+## Pictures
+![Screenshot](/ss/home_ss.png)
