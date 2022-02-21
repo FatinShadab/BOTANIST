@@ -21,9 +21,15 @@
 
 ## Download & Install
 - Download / clone the repo from github
+```
+git clone https://github.com/FatinShadab/BOTANIST.git
+```
 - Install dependencies
 ```
 pip install -r req.text
 ```
 -  Run the main.py in api folder
+```
+python main.py
+```
 -  Go to [localhost](http://localhost:8080/)
