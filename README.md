@@ -1,5 +1,5 @@
 # BOTANIST
- BOTANIST is a end to end ml-web project of detecting potato and pepper-bell diseasese
+ BOTANIST is a end to end ml-web project of detecting potato and pepper-bell diseases.
  
  ## Table of Contents
 * [Technologies](#technologies-used)
